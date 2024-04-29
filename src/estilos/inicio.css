@@ -1,0 +1,144 @@
+
+.container{
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.container-foto{
+    max-width: 100%;
+    margin: 5rem 0 3rem;
+}
+
+.container-foto img{
+    margin-bottom: 20px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .7s;   
+}
+
+
+.titulos{
+    display: block;
+    margin: 4rem auto 2rem;
+    text-align: center;
+    font-family: "Caveat Brush",sans-serif;
+    letter-spacing: 1px;
+    color: #e2e2e6;
+    font-style: normal;
+}
+
+.titulos
+h1{
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.titulos
+h2{
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: "Caveat Brush",sans-serif;
+}
+
+
+/* iconos */
+.slider,
+.tip,
+.formulario{
+    max-width: 100%;
+    margin: 5rem auto 3rem;
+}
+.footer{
+    max-width: 100%;
+    margin: 4rem auto 2rem;
+}
+
+.icon-container {
+    max-width: 100%;
+    margin: 5rem auto 3rem ;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e2e2e6;
+}
+
+.icon-container i {
+    font-size: 3.5rem ; 
+    padding: 2rem 0;
+}
+
+.icon-container p {
+    margin: 1rem;
+    font-size: 1.6rem; 
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+/* info */
+
+.info-section {
+    font-family: "Montserrat", sans-serif;
+    margin: 5rem auto 3rem;
+    color: #e2e2e6;
+    background-image: url(../imagenes/consultorio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.info-consulta{
+    margin: 4rem auto 5rem;
+    background-image: url(../imagenes/consultorio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 400px; 
+    width: 100%; 
+}
+
+.info-consulta h3{
+    font-family: "Caveat Brush",sans-serif;
+    letter-spacing: 1px;
+    margin: 4rem auto;
+    padding: 0px 12px;
+    font-size: 2rem;
+    color: #e2e2e6;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637); 
+}
+
+.info-section p {
+    letter-spacing: 2px;
+    line-height: 1.8;
+    font-weight: 600;
+    position: relative;
+}
+
+.slider,
+.tip,
+.formulario, 
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #e2e2e6;
+    text-align: center;
+    margin: 2rem auto;
+}
+

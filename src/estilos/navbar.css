@@ -1,0 +1,92 @@
+
+nav{
+    z-index: 1;
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    background-color:#088b3a ;
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    padding: 12px ;
+    justify-content: space-between;
+    border-bottom: 1px solid  #e9e7e7;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0px 12px;
+    padding: 4px 8px;
+    letter-spacing: 1.8px;
+    color: #e9e7e7;
+    
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+.menu-icon span {
+    height: 2px;
+    width: 22px;
+    background-color: #e9e7e7;
+    margin: 4px 12px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.menu-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 6px);
+}
+
+.menu-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -6px);
+}
+
+
+@media (max-width: 850px) {
+
+    .menu {
+        background-color:#088b3a ;
+        position: absolute;
+        flex-direction: column;
+        z-index: 3;
+        right: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        top: 100%;
+        transition: transform 0.3s ease-in-out; 
+        transform: translateX(-100%); 
+        
+    }
+
+    .menu.open {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .menu-icon {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .menu li {
+        margin: 0.8rem auto; 
+        padding: 0.8rem 0.4rem; 
+        font-size: 1.4rem;
+    }
+}
