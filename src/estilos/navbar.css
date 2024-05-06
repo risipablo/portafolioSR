@@ -4,15 +4,14 @@ nav{
     width: 100%;
     position: fixed; 
     top: 0; 
-    background-color:#088b3a ;
+    background-color:#0d5b60 ;
 }
 
 .navbar {
     display: flex;
     text-align: center;
-    padding: 12px ;
+    padding: 9px ;
     justify-content: space-between;
-    border-bottom: 1px solid  #e9e7e7;
 }
 
 .menu {
@@ -57,10 +56,19 @@ nav{
 }
 
 
+.menu a:hover{
+    transition: .4s;
+    color:#dcf30af8;
+}
+
+.active li {
+    color:#dcf30af8;;
+}
+
 @media (max-width: 850px) {
 
     .menu {
-        background-color:#088b3a ;
+        background-color:#0d5b60;
         position: absolute;
         flex-direction: column;
         z-index: 3;

@@ -10,14 +10,37 @@
 
 
 .app{
-  background-color:#088b3a ;
+  background-color:#F8ECE9 ;
+  max-height: 100vh;
+  background-image: url(../imagenes/granulado2.jpg);
+  scroll-behavior: smooth;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
+body {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  overflow: hidden; /* Oculta el desplazamiento del cuerpo */
+}
 ul,li{
   list-style: none;
   text-decoration: none;
+}
+
+
+/* Estilo del scrollbar track (la barra de fondo) */
+.app::-webkit-scrollbar-track {
+  background: #F8ECE9; /* Color del fondo del scrollbar */
+}
+
+/* Estilo del scrollbar thumb (la barra de desplazamiento) */
+.app::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del scrollbar */
+  border-radius: 6px; /* Radio de borde del scrollbar */
+  border: 3px solid #F8ECE9; /* Borde del scrollbar */
 }

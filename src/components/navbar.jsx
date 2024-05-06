@@ -20,9 +20,8 @@ function Navbar(){
         <nav>
             <div className="navbar">
                 <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                    <NavLink to="/">  <li className="active" onClick={closeMenu}> Inicio </li>  </NavLink>
-                    <NavLink to="/info">  <li className="active" onClick={closeMenu}> Sobre mi </li>  </NavLink>
-                    <li className="active"  onClick={closeMenu}> <a href="#experiencia"> Experiencia </a>  </li> 
+                    <NavLink to="/info">  <li className="active" onClick={closeMenu}> <a> Sobre mi</a> </li>  </NavLink>
+                    <NavLink to="/experencia">  <li className="active"  onClick={closeMenu}> <a href="#experiencia"> Experiencia </a>  </li> </NavLink>
                     <li className="active"  onClick={closeMenu}> <a href="#articulo"> Articulos </a>  </li> 
                     <li className="active" onClick={closeMenu}>  <a href="#contacto"> Contacto </a>   </li> 
                 </ul>

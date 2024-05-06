@@ -1,46 +1,51 @@
 
 .container{
-    max-width: 1200px;
     margin: 3rem auto;
+    max-height: 100vh;
 }
 
 .container-foto{
     max-width: 100%;
-    margin: 5rem 0 3rem;
+    margin: 3rem auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .container-foto img{
-    margin-bottom: 20px;
     display: block;
-    width: 80%;
-    margin: auto;
-    border-radius: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    width:100%;
+    height: auto;
+    border-radius: 80%;
     cursor: pointer;
-    transition: .7s;   
+    transition: .7s;  
+    
 }
-
 
 .titulos{
     display: block;
-    margin: 4rem auto 2rem;
+    margin: 2rem auto ;
     text-align: center;
     font-family: "Caveat Brush",sans-serif;
     letter-spacing: 1px;
-    color: #e2e2e6;
+    color:#0d5b60;
     font-style: normal;
 }
 
 .titulos
 h1{
-    font-weight: 400;
-    font-size: 2.2rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    
 }
 
 .titulos
 h2{
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 2.3rem;
     font-family: "Caveat Brush",sans-serif;
+    color:#0d5b60;
 }
 
 
@@ -52,7 +57,8 @@ h2{
     margin: 5rem auto 3rem;
 }
 .footer{
-    max-width: 100%;
+    background-color: #157a81;
+    width: 100%;
     margin: 4rem auto 2rem;
 }
 
@@ -63,7 +69,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #e2e2e6;
+    color:#0d5b60;
 }
 
 .icon-container i {
@@ -73,7 +79,8 @@ h2{
 
 .icon-container p {
     margin: 1rem;
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
+    font-weight: 500; 
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif; 
 }
@@ -102,17 +109,31 @@ h2{
     position: relative;
     height: 400px; 
     width: 100%; 
+    display: flex;
+    align-items: center;
 }
 
 .info-consulta h3{
     font-family: "Caveat Brush",sans-serif;
     letter-spacing: 1px;
-    margin: 4rem auto;
-    padding: 0px 12px;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #e2e2e6;
-    position: relative;
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%); 
 }
+
+@media (max-width: 300px) {
+    .info-consulta {
+    height: 300px; 
+    margin: 3rem auto 4rem; 
+    }
+
+    .info-consulta h3 {
+    font-size: 1.8rem; 
+    }
+}
+
 
 .overlay {
     position: absolute;
@@ -136,9 +157,51 @@ h2{
 h2{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 2rem;
-    color: #e2e2e6;
+    font-size: 2.2rem;
+    color:#0d5b60;
     text-align: center;
     margin: 2rem auto;
 }
 
+@media (min-width: 768px) {
+    .titulo-formulario {
+    order: -1; 
+    }
+}
+
+
+/* .btn-volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: #000000;
+    border: none;
+    border-radius: 100%;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-volver-arriba:hover {
+    opacity: 0.8;
+} */
+
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Puedes cambiar el color a tu preferencia */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .scroll-to-top-btn:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
+  }
+  

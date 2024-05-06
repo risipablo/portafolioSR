@@ -2,13 +2,12 @@
 
     export const Footer = () => {
     return (
+
         <Flex
-        align="center"
-        justify="center"
-        p={4}
+        
+        justify="flex-start"
         width="100%"
-        mt="auto"
-        borderTop="1px solid white" // Agrega un borde superior blanco
+        p={4}
         >
         <Box
             as="a"
@@ -18,8 +17,8 @@
             aria-label="Instagram"
             mr={12}
             mt={8}
-            fontSize="2.2rem" // Aumenta el tamaño de los íconos
-            color="white" // Cambia el color de los íconos a blanco
+            fontSize="2.2rem"
+            color="#e2e2e6"
         >
             <i className="fa-brands fa-whatsapp"></i>
         </Box>
@@ -32,8 +31,7 @@
             mr={12}
             mt={8}
             fontSize="2.2rem"
-             // Aumenta el tamaño de los íconos
-            color="white" // Cambia el color de los íconos a blanco
+            color="#e2e2e6"
         >
             <i className="fa-brands fa-instagram"></i>
         </Box>
@@ -45,8 +43,8 @@
             aria-label="Correo electrónico"
             mr={2}
             mt={8}
-            fontSize="2.2rem" // Aumenta el tamaño de los íconos
-            color="white" // Cambia el color de los íconos a blanco
+            fontSize="2.2rem"
+            color="#e2e2e6"
         >
             <i className="fa-brands fa-linkedin"></i>
         </Box>

@@ -61,7 +61,6 @@ export const Sliders = () => {
                     icon={<ChevronLeftIcon w={8} h={8} />}
                     onClick={handlePrev}
                     size="xl"
-                    colorScheme="black"
                     isRound
                     ml={2}
                     position="absolute"
@@ -73,7 +72,7 @@ export const Sliders = () => {
                     aria-label="Next Image"
                     icon={<ChevronRightIcon w={8} h={8} />}
                     onClick={handleNext}
-                    colorScheme="black"
+
                     size="xl"
                     isRound
                     mr={2}
