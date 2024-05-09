@@ -1,7 +1,7 @@
 
 .container{
     margin: 3rem auto;
-    max-height: 100vh;
+    height: 100%;
 }
 
 .container-foto{
@@ -14,7 +14,7 @@
 .container-foto img{
     display: block;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 2rem;
     width:100%;
     height: auto;
     border-radius: 80%;
@@ -52,14 +52,16 @@ h2{
 /* iconos */
 .slider,
 .tip,
-.formulario{
+.formulario,
+.exp,
+.info,
+.impor{
     max-width: 100%;
     margin: 5rem auto 3rem;
 }
 .footer{
     background-color: #157a81;
     width: 100%;
-    margin: 4rem auto 2rem;
 }
 
 .icon-container {
@@ -86,11 +88,12 @@ h2{
 }
 
 
+
 /* info */
 
 .info-section {
     font-family: "Montserrat", sans-serif;
-    margin: 5rem auto 3rem;
+    margin: 5rem auto 5rem;
     color: #e2e2e6;
     background-image: url(../imagenes/consultorio.jpg);
     background-position: center;
@@ -101,7 +104,7 @@ h2{
 }
 
 .info-consulta{
-    margin: 4rem auto 5rem;
+    margin: 5rem auto 5rem;
     background-image: url(../imagenes/consultorio.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -110,6 +113,7 @@ h2{
     height: 400px; 
     width: 100%; 
     display: flex;
+
     align-items: center;
 }
 
@@ -118,10 +122,11 @@ h2{
     letter-spacing: 1px;
     font-size: 2.3rem;
     color: #e2e2e6;
-    position: absolute; 
-    top: 50%;
-    transform: translateY(-50%); 
+    top: 60%; 
+    transform: translateY(-50%);
+    margin-top: 3rem;
 }
+
 
 @media (max-width: 300px) {
     .info-consulta {
@@ -156,7 +161,7 @@ h2{
 .formulario, 
 h2{
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2.2rem;
     color:#0d5b60;
     text-align: center;
@@ -169,39 +174,8 @@ h2{
     }
 }
 
-
-/* .btn-volver-arriba {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: red;
-    color: #000000;
-    border: none;
-    border-radius: 100%;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
+.impor img{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
-
-.btn-volver-arriba:hover {
-    opacity: 0.8;
-} */
-
-
-.scroll-to-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff; /* Puedes cambiar el color a tu preferencia */
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    z-index: 1000;
-  }
-  
-  .scroll-to-top-btn:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
-  }
-  

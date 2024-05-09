@@ -24,8 +24,8 @@
 }
 
 body {
-  margin: 0; /* Elimina el margen predeterminado del cuerpo */
-  overflow: hidden; /* Oculta el desplazamiento del cuerpo */
+  margin: 0; 
+  overflow: hidden; 
 }
 ul,li{
   list-style: none;
@@ -33,14 +33,23 @@ ul,li{
 }
 
 
-/* Estilo del scrollbar track (la barra de fondo) */
-.app::-webkit-scrollbar-track {
-  background: #F8ECE9; /* Color del fondo del scrollbar */
+.slide-in{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0d5b60;
+  transform-origin: bottom;
 }
 
-/* Estilo del scrollbar thumb (la barra de desplazamiento) */
-.app::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color del scrollbar */
-  border-radius: 6px; /* Radio de borde del scrollbar */
-  border: 3px solid #F8ECE9; /* Borde del scrollbar */
+.slide-out{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0d5b60;
+  transform-origin: top;
 }
+

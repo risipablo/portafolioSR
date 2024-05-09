@@ -1,16 +1,14 @@
 
 import imagen1 from "../imagenes/Foto.png"
-import { Box, Button,Text,Flex } from "@chakra-ui/react";
+import { Box, Button,Text,Flex,Link } from "@chakra-ui/react";
 import "../estilos/inicio.css"
 import { NavLink } from "react-router-dom"
 import { Sliders } from "./slider";
 import Formulario from "./formulario";
 import { ArticuloInformativo } from "./articulos";
-import { Footer } from "./footer";
 import { motion } from "framer-motion";
 import Volver from "./volver";
-
-
+import imagen from "../imagenes/logo.png"
 
 
 export const Inicio = () => {
@@ -37,15 +35,23 @@ export const Inicio = () => {
             </div>
             <Box className="info-section" textAlign="justify" maxW="800px" mx="auto" p="2rem" position="relative" overflow="hidden">
                 <Box className="overlay"></Box>
-                <Text fontSize={["md", "lg", "xl"]} mb="4rem" >
-                    <p>
-                    Soy [Nombre del Psicólogo], un psicólogo clínico y terapeuta familiar con [X] años de experiencia. Mi enfoque terapéutico se basa en técnicas humanistas, 
+                <Text fontSize={["lg", "lg", "xl"]} mb="4rem" letterSpacing="2px">
+                    <p >
+                    Me dedico a la psicólogia clínica y terapia familiar con 15 años de experiencia. Mi enfoque terapéutico se basa en técnicas humanistas, 
                     cognitivo-conductuales y sistémicas. Especializado en manejo del estrés, ansiedad, depresión, conflictos de pareja, crianza de hijos, duelo y trauma, ofrezco un espacio de apoyo y confianza para explorar pensamientos y emociones.
                     </p>
                 </Text>
                 <Flex justify="center" zIndex="1">
-                    <NavLink to="">
-                    <Button className="ver-mas"  borderRadius="9" width="200px">Ver Más</Button>
+                    <NavLink to="/info">
+                    <Button className="ver-mas"  borderRadius="9" 
+                    width="200px"
+                    background="#157a81" 
+                    color="#ffff"
+                    letterSpacing={1.2}
+                    fontSize="1rem"
+                    _hover={{ background: "#ffffff", color: "#000000" }}>
+                        Ver Más
+                        </Button>
                     </NavLink>
                 </Flex>
             </Box>
@@ -55,11 +61,15 @@ export const Inicio = () => {
                 
                 <Sliders/>
                 <Flex justify="center"  mt="2rem" >
-                    <NavLink to="">
-                    <Button className="ver-mas" borderRadius="9" width="200px" 
-                    background="#0d5b60" 
+                    <NavLink to="/experencia">
+                    <Button className="ver-mas" borderRadius="9"
+                    width="200px" 
+                    letterSpacing={1}
+                    p={6}
+                    background="#157a81" 
                     _hover={0}
-                    color="#ffff">Ver experiencia</Button>
+                    color="#ffff"
+                    >Ver experiencia</Button>
                     </NavLink>
                 </Flex>
             </section>
@@ -73,17 +83,31 @@ export const Inicio = () => {
 
             <Box className="info-consulta" textAlign="center" maxW="800px" mx="auto" p="2rem" position="relative" overflow="hidden">
                 <Box className="overlay"></Box>
-                <Text >
-                        <h3> Todos merecemos ser escuchados</h3>
+                <Text style={{ position: "relative", }}>
+                    <h3>Todos merecemos ser escuchados</h3>
+                    <Button className="ver-mas" borderRadius="9"
+                    width="200px" 
+                    letterSpacing={1.5}
+                    p={6}
+                    background="#157a81" 
+                    _hover={{opacity:0.9}}
+                    color="#ffff">
+                    <Link href="#" fontSize="1rem" fontFamily="Montserrat">
+                        Consultar
+                    </Link>
+                    </Button>
                 </Text>
-                <Flex justify="center" zIndex="1">
-                </Flex>
             </Box>
 
-            <section className="tip" id="articulo">
-                <h2> Articulos </h2>
+
+            <section className="tip" >
+            
                 <ArticuloInformativo/>
             </section> 
+
+            <section className="impor">
+                <img src={imagen} alt="logo"  />
+            </section>
 
             <section className="formulario" id="contacto">
                 <h2> Contacto </h2>
@@ -97,10 +121,6 @@ export const Inicio = () => {
             Deja tus consultas, serán respondidas brevemente
             </h4>
                 <Formulario/>
-            </section>
-
-            <section className="footer">
-                <Footer/>
             </section>
 
             <Volver/>

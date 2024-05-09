@@ -21,10 +21,10 @@ export const ArticuloInformativo = () => {
                         overflow="hidden"
                         color="white"
                         letterSpacing={1}
-                        bgPosition="center"
+                        bgPosition="center center"
                         borderRadius="md"
                         width={{ base: "100%"}}
-                        p="1rem 2rem"
+                        p="3rem 1rem"
                         textAlign="center"
                         _hover={{ transform: "scale(1.04)", transition: "transform 0.3s ease" }}
                     >
@@ -36,11 +36,13 @@ export const ArticuloInformativo = () => {
                                 {item.description}
                             </Text>
                             <Button
-                                background="#0d5b60"
+                                background="#157a81"
                                 color="#ffff"
-                                fontSize={{ base: "lg", md: "xl" }}
                                 w="50%"
                                 alignSelf="center"
+                                letterSpacing={1.2}
+                                fontSize="1.1rem"
+                                _hover={{ background: "#ffffff", color: "#000000" }}
                             >
                                 ver más
                             </Button>

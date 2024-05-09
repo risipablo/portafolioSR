@@ -2,9 +2,8 @@
 
     export const Footer = () => {
     return (
-
+        <section className="footer">
         <Flex
-        
         justify="flex-start"
         width="100%"
         p={4}
@@ -49,5 +48,7 @@
             <i className="fa-brands fa-linkedin"></i>
         </Box>
         </Flex>
+        </section>
+
     );
     };

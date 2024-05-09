@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Slider, Image, Box, IconButton, Flex } from '@chakra-ui/react';
+import { Slider, Image, Box, IconButton, Flex,Text } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import image1 from "../imagenes/image1.jpg";
 import image2 from "../imagenes/image2.jpg";
@@ -7,9 +7,9 @@ import image3 from "../imagenes/image3.jpg";
 
 export const Sliders = () => {
     const imagenes = [
-        { src: image1, text: "Consultorios" },
+        { src: image1, text: "Sesiones en consultorios" },
         { src: image2, text: "Atencion de discapacidades" },
-        { src: image3, text: "Jefa de piso" },
+        { src: image3, text: "Coordinadora de areas" },
     ];
 
     const [imagenActual, setImagenActual] = useState(0);
@@ -49,9 +49,13 @@ export const Sliders = () => {
                                 transition: 'opacity 3s ease-in-out'
                             }}
                         />
-                        {/* <Text fontSize="1.2rem" mt="1rem" className="texto-icon">
+                        <Text fontSize="1.2rem" mt="1rem" className="texto-icon" color="#131212"
+                        style={{
+                            display: index === imagenActual ? 'block' : 'none',
+                            transition: 'opacity 3s ease-in-out'
+                        }}>
                             {imagen.text}
-                        </Text> */}
+                        </Text>
                     </Box>
                 ))}
             </Slider>

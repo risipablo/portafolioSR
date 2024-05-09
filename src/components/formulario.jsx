@@ -34,7 +34,7 @@
             <VStack spacing={6} align="stretch">
                 <FormControl>
                 <Input
-                    p={8}
+                    p={6}
                     type="text"
                     placeholder="Nombre"
                     value={nombre}
@@ -47,7 +47,7 @@
                 </FormControl>
                 <FormControl>
                 <Input
-                    p={8}
+                    p={6}
                     type="text"
                     placeholder="Apellido"
                     value={apellido}
@@ -60,7 +60,7 @@
                 </FormControl>
                 <FormControl>
                 <Input
-                    p={8}
+                    p={6}
                     type="email"
                     placeholder="Email"
                     value={email}
@@ -73,7 +73,7 @@
                 </FormControl>
                 <FormControl>
                 <Select
-                    placeholder="Motivo"
+                    
                     value={tipoConsulta}
                     onChange={(e) => setTipoConsulta(e.target.value)}
                     color="black"
