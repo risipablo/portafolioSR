@@ -22,7 +22,7 @@ export const ArticuloInformativo = () => {
                         color="white"
                         letterSpacing={1}
                         bgPosition="center center"
-                        borderRadius="md"
+                        borderRadius="lg"
                         width={{ base: "100%"}}
                         p="3rem 1rem"
                         textAlign="center"

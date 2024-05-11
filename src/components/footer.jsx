@@ -3,14 +3,10 @@
     export const Footer = () => {
     return (
         <section className="footer">
-        <Flex
-        justify="flex-start"
-        width="100%"
-        p={4}
-        >
-        <Box
+        <Flex justify="flex-start" width="100%" p={4}>
+            <Box
             as="a"
-            href="https://www.instagram.com/tucuenta"
+            href="https://wa.me//299465-4519"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -18,12 +14,13 @@
             mt={8}
             fontSize="2.2rem"
             color="#e2e2e6"
-        >
+            _hover={{ color: "#25D366", transition: "color 0.3s ease" }}
+            >
             <i className="fa-brands fa-whatsapp"></i>
-        </Box>
-        <Box
+            </Box>
+            <Box
             as="a"
-            href="https://wa.me/1234567890"
+            href="https://www.instagram.com/psicologiaintegral.cipolletti/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
@@ -31,10 +28,11 @@
             mt={8}
             fontSize="2.2rem"
             color="#e2e2e6"
-        >
+            _hover={{ color: "#FF6F61", transition: "color 0.3s ease" }}
+            >
             <i className="fa-brands fa-instagram"></i>
-        </Box>
-        <Box
+            </Box>
+            <Box
             as="a"
             href="mailto:tucorreo@gmail.com"
             target="_blank"
@@ -44,11 +42,11 @@
             mt={8}
             fontSize="2.2rem"
             color="#e2e2e6"
-        >
+            _hover={{ color: "#022233", transition: "color 0.3s ease" }}
+            >
             <i className="fa-brands fa-linkedin"></i>
-        </Box>
+            </Box>
         </Flex>
         </section>
-
     );
     };

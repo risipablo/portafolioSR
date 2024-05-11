@@ -52,7 +52,6 @@ h2{
 /* iconos */
 .slider,
 .tip,
-.formulario,
 .exp,
 .info,
 .impor{
@@ -77,6 +76,7 @@ h2{
 .icon-container i {
     font-size: 3.5rem ; 
     padding: 2rem 0;
+    margin: 1rem;
 }
 
 .icon-container p {
@@ -86,7 +86,6 @@ h2{
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif; 
 }
-
 
 
 /* info */
@@ -176,6 +175,23 @@ h2{
 
 .impor img{
     margin: 0 auto;
+    padding: 1.2rem;
     width: 100%;
     height: auto;
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  

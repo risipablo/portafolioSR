@@ -23,6 +23,12 @@ export function Experencia(){
             location:"Cipolletti",
             description:"Atención en consultorios, loren dasdafsdgadahrafdadfadf",
             years: "2023- Actualidad"
+        },
+        {
+            place:"Policlinico",
+            location:"Cipolletti",
+            description:"Atención en consultorios, loren dasdafsdgadahrafdadfadf",
+            years: "2023- Actualidad"
         }
     ]
 

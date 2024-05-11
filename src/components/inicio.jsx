@@ -4,34 +4,42 @@ import { Box, Button,Text,Flex,Link } from "@chakra-ui/react";
 import "../estilos/inicio.css"
 import { NavLink } from "react-router-dom"
 import { Sliders } from "./slider";
-import Formulario from "./formulario";
 import { ArticuloInformativo } from "./articulos";
 import { motion } from "framer-motion";
-import Volver from "./volver";
-import imagen from "../imagenes/logo.png"
+import LogoAnimado from "./animado";
+import { Formulario } from "./formulario";
+
+
 
 
 export const Inicio = () => {
-
     return(
         
         <section className="container">
             <div className="container-foto">
-                
-                    <motion.img src={imagen1} 
-                    alt="psico" 
-                    />
-                    
-
-                <div className="titulos">
-                    <motion.h1 
-                        >
+                <motion.img
+                    src={imagen1}
+                    alt="psico"
+                    initial={{ opacity: 0, y: -500 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                />
+                    <div className="titulos">
+                    <motion.h1
+                        initial={{ opacity: 0, x: -100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                    >
                         Sabrina Ramos
                     </motion.h1>
-                    <motion.h2 
-                        animate={{ y:-8}}
-                        initial={{ y:-100}}> Lincencia en Psicologia</motion.h2>
-                </div>
+                    <motion.h2
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                    >
+                        Licenciada en Psicología
+                    </motion.h2>
+                    </div>
             </div>
             <Box className="info-section" textAlign="justify" maxW="800px" mx="auto" p="2rem" position="relative" overflow="hidden">
                 <Box className="overlay"></Box>
@@ -106,7 +114,7 @@ export const Inicio = () => {
             </section> 
 
             <section className="impor">
-                <img src={imagen} alt="logo"  />
+                <LogoAnimado/>
             </section>
 
             <section className="formulario" id="contacto">
@@ -115,7 +123,7 @@ export const Inicio = () => {
             style={{
                 fontSize: "clamp(1rem, 5vw, 1.2rem)", 
                 maxWidth: "90%", 
-                margin: "2rem auto" 
+                margin: "2rem" 
             }}
             >
             Deja tus consultas, serán respondidas brevemente
@@ -123,7 +131,6 @@ export const Inicio = () => {
                 <Formulario/>
             </section>
 
-            <Volver/>
         </section>
         
     )
