@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Input, Button, FormControl, Select, Container, Grid,VStack
+import { Input, Button, FormControl, Select, Container, Grid,VStack, Textarea
 } from '@chakra-ui/react';
 
 export const Formulario = () => {
@@ -19,7 +19,7 @@ export const Formulario = () => {
 
         if (isFormValid && !isEmailSent) {
             emailjs
-                .sendForm('service_jsbhj2c', 'template_ncnlt7f', form.current, {
+                .sendForm('service_0tx1sdp', 'template_lq35ixr', form.current, {
                     publicKey: '3Aon3ElzUvco9EjAq',
                 })
                 .then(
@@ -82,17 +82,19 @@ export const Formulario = () => {
                 color="black"
                 backgroundColor="white"
                 borderColor="#242323"
-                borderWidth="1px"
+                borderWidth="1.2px"
+                fontSize="1rem"
                 type="text" placeholder="Ingrese su nombre" name="user_name" onChange={handleInput} />
                 <Input 
                 p={6}
                 color="black"
                 backgroundColor="white"
                 borderColor="#242323"
-                borderWidth="1px"
+                borderWidth="1.2px"
                 type="text" placeholder="Ingrese su apellido" name="user_lastname" onChange={handleInput} />
                 <Input 
                 p={6}
+                fontSize="1.2rem"
                 color="black"
                 backgroundColor="white"
                 borderColor="#242323"
@@ -100,6 +102,7 @@ export const Formulario = () => {
                 type="email" placeholder="Ingrese su correo electrónico" name="user_email" onChange={handleInput} />
                 <FormControl>
                     <Select
+                        fontSize="1.2rem"
                         name="user_question"
                         value={tipoConsulta}
                         onChange={(e) => setTipoConsulta(e.target.value)}
@@ -108,13 +111,14 @@ export const Formulario = () => {
                         borderColor="#242323"
                         borderWidth="1px"
                     >
-                        <option value="consulta">Consulta</option>
-                        <option value="reservar turno">Reservar Turno</option>
+                        <option onChange={handleInput} value="consulta">Consulta</option>
+                        <option  onChange={handleInput} value="reservar turno">Reservar Turno</option>
                     </Select>
                     </FormControl>
                     <FormControl>
-                <Input 
+                <Textarea
                 p={12}
+                fontSize="1.2rem"
                 color="black"
                 backgroundColor="white"
                 borderColor="#242323"

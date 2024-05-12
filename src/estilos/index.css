@@ -10,6 +10,8 @@
 
 
 .app{
+  margin: 0;
+  padding: 0;
   background-color:#F8ECE9 ;
   max-height: 100vh;
   background-image: url(../imagenes/granulado2.jpg);

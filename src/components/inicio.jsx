@@ -3,7 +3,7 @@ import imagen1 from "../imagenes/Foto.png"
 import { Box, Button,Text,Flex,Link } from "@chakra-ui/react";
 import "../estilos/inicio.css"
 import { NavLink } from "react-router-dom"
-import { Sliders } from "./slider";
+// import { Sliders } from "./slider";
 import { ArticuloInformativo } from "./articulos";
 import { motion } from "framer-motion";
 import LogoAnimado from "./animado";
@@ -64,7 +64,7 @@ export const Inicio = () => {
                 </Flex>
             </Box>
 
-            <section className="slider" id="experiencia">
+            {/* <section className="slider" id="experiencia">
                 <h2> Mi experiencía</h2>
                 
                 <Sliders/>
@@ -80,7 +80,7 @@ export const Inicio = () => {
                     >Ver experiencia</Button>
                     </NavLink>
                 </Flex>
-            </section>
+            </section> */}
 
             <section className="icon-container">
                 <i className="fa-solid fa-phone"></i>
@@ -92,7 +92,7 @@ export const Inicio = () => {
             <Box className="info-consulta" textAlign="center" maxW="800px" mx="auto" p="2rem" position="relative" overflow="hidden">
                 <Box className="overlay"></Box>
                 <Text style={{ position: "relative", }}>
-                    <h3>Todos merecemos ser escuchados</h3>
+                    <h3> Reserva tu turno por whatsapp</h3>
                     <Button className="ver-mas" borderRadius="9"
                     width="200px" 
                     letterSpacing={1.5}
@@ -101,7 +101,7 @@ export const Inicio = () => {
                     _hover={{opacity:0.9}}
                     color="#ffff">
                     <Link href="#" fontSize="1rem" fontFamily="Montserrat">
-                        Consultar
+                        Whatsapp
                     </Link>
                     </Button>
                 </Text>

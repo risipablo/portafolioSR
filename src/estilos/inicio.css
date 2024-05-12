@@ -5,19 +5,19 @@
 }
 
 .container-foto{
-    max-width: 100%;
-    margin: 3rem auto;
+    max-width: 600px;
+    margin: 4rem auto;
     position: relative;
     overflow: hidden;
+    
 }
 
 .container-foto img{
     display: block;
-    margin: 0 auto;
-    padding: 2rem;
+    border-radius: 100%;
+    margin: auto;
+    padding: 1rem 3rem;
     width:100%;
-    height: auto;
-    border-radius: 80%;
     cursor: pointer;
     transition: .7s;  
     
@@ -25,10 +25,10 @@
 
 .titulos{
     display: block;
-    margin: 2rem auto ;
+    margin: 2rem auto;
     text-align: center;
-    font-family: "Caveat Brush",sans-serif;
-    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
     color:#0d5b60;
     font-style: normal;
 }
@@ -37,14 +37,13 @@
 h1{
     font-weight: 600;
     font-size: 2.5rem;
-    
+    letter-spacing: 1px;
 }
 
 .titulos
 h2{
-    font-weight: 600;
-    font-size: 2.3rem;
-    font-family: "Caveat Brush",sans-serif;
+    padding: 3px;
+    font-size: 1.8rem;
     color:#0d5b60;
 }
 
